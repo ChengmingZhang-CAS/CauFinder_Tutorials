@@ -14,12 +14,19 @@ release = '1.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['nbsphinx']
+extensions = [
+    'nbsphinx',  # Jupyter Notebook support
+    'myst_parser'  # Markdown support
+]
 
 templates_path = ['_templates']
 exclude_patterns = []
 
-
+# Explicitly set file types
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
