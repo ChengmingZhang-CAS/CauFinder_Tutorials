@@ -3,7 +3,7 @@ Installation
 
 This guide provides a quick and straightforward way to install CauFinder.
 
-Clone the Repository
+Clone the repository
 --------------------
 
 First, clone the CauFinder repository from GitHub:
@@ -12,7 +12,7 @@ First, clone the CauFinder repository from GitHub:
 
    git clone https://github.com/ChengmingZhang-CAS/CauFinder-main.git
 
-Set Up Conda Environment
+Set up conda environment
 ------------------------
 
 Create and activate a new Conda environment using the provided `environment.yml` file:
@@ -22,7 +22,7 @@ Create and activate a new Conda environment using the provided `environment.yml`
    conda env create -n caufinder_env -f environment.yml
    conda activate caufinder_env
 
-Install Additional Dependencies
+Install additional dependencies
 -------------------------------
 
 If you need additional dependencies, install them using `pip`:
