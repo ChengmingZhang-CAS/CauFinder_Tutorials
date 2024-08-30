@@ -16,7 +16,7 @@ CauFinder excels in distinguishing causal factors from spurious ones, ensuring p
 Overview
 --------
 
-.. image:: _static/images/CauFinder_overview.png
+.. image:: ../images/CauFinder_overview.png
    :alt: CauFinder Overview
    :align: center
 
