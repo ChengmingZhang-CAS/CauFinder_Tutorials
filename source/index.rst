@@ -29,8 +29,8 @@ Contents
    :maxdepth: 2
    :caption: Contents:
    
-   human_note_new829
-   mouse_note_new829
+   human_note_new829/human_note_new829
+   mouse_note_new829/mouse_note_new829
 
 References
 ----------
@@ -38,4 +38,3 @@ References
 If you use CauFinder in your research, please cite the following paper:
 
 Chengming Zhang, Zexi Chen, Yuanxiang Miao, Yun Xue, Deyu Cai, Weifeng Guo, Hongbin Ji, Kazuyuki Aihara, Luonan Chen. "Steering cell-state and phenotype transitions by causal disentanglement learning." *bioRxiv* (2024): [https://doi.org/10.1101/2024.08.16.607277](https://doi.org/10.1101/2024.08.16.607277).
-
