@@ -16,7 +16,7 @@ CauFinder excels in distinguishing causal factors from spurious ones, ensuring p
 Overview
 --------
 
-.. image:: ../images/CauFinder_overview.png
+.. image:: images/CauFinder_overview.png
    :alt: CauFinder Overview
    :align: center
 
@@ -29,8 +29,8 @@ Contents
    :maxdepth: 2
    :caption: Contents:
    
-   ./human_note_new829/human_note_new829
-   ./mouse_note_new829/mouse_note_new829
+   human_note_new829/human_note_new829
+   mouse_note_new829/mouse_note_new829
 
 References
 ----------
