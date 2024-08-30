@@ -29,6 +29,7 @@ Contents
    :maxdepth: 2
    :caption: Contents:
    
+   Installation
    bm_simData_linear
    human_note_new829/human_note_new829
    mouse_note_new829/mouse_note_new829
