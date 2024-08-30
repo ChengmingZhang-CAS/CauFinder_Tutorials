@@ -1,6 +1,6 @@
 # Human LUAS
 
-## import necessary packages for CauFinder
+## Import necessary packages for CauFinder
 
 
 ```python
@@ -55,7 +55,7 @@ import warnings
     2024-08-13 03:47:37.871158: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
 
 
-## set for figure saving
+## Set path for read files and save output
 
 
 ```python
@@ -64,8 +64,6 @@ plt.rcParams['pdf.fonttype'] = 42
 plt.rcParams['font.sans-serif'] = ['Arial']
 plt.rcParams['font.family'] = 'sans-serif'
 ```
-
-## Set path for read files and save output
 
 
 ```python
@@ -84,7 +82,7 @@ adata, adata_filter = load_luas_human_adata(data_dir=data_path, tf_list=tf_list)
 
 ```
 
-##  run CauFinder
+##  Run CauFinder
 
 
 ```python
@@ -144,7 +142,7 @@ else:
     drivers = filtered_driver_info.index.to_list()
 ```
 
-## plot PCA with probabilities 
+## Plot PCA with probabilities 
 
 
 ```python
@@ -158,7 +156,7 @@ model.plot_pca_with_probs(adata_filter, save_dir=output_path, elev=20, azim=60)
     
 
 
-## run state transition
+## Run state transition
 
 ### transition from 0 -> 1
 
@@ -242,7 +240,7 @@ adata_decrease = model.guided_state_transition(
     Processing sample 69, Target direction: decrease
 
 
-### decreasing state transition on PCs for sample68
+### Decreasing state transition on PCs for sample68
 
 
 ```python
@@ -268,7 +266,7 @@ with open(os.path.join(output_path, 'adata_decrease.pkl'), 'wb') as file:
     pkl.dump(adata_decrease, file)
 ```
 
-## drawing state transition score on PCA
+## Drawing state transition score on PCA
 
 ### PCA plot for data
 

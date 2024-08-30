@@ -1,6 +1,6 @@
 # Mouse LUAS
 
-## import necessary packages for CauFinder
+## Import necessary packages for CauFinder
 
 
 ```python
@@ -46,7 +46,7 @@ import warnings
 
 
 
-## set for figure saving
+## Set path for read files and save output
 
 
 ```python
@@ -55,8 +55,6 @@ plt.rcParams['pdf.fonttype'] = 42
 plt.rcParams['font.sans-serif'] = ['Arial']
 plt.rcParams['font.family'] = 'sans-serif'
 ```
-
-## Set path for read files and save output
 
 
 ```python
@@ -68,7 +66,7 @@ output_path = os.path.join(case_dir, 'output', 'final_model')
 os.makedirs(output_path, exist_ok=True)
 ```
 
-## run CauFinder (one seed example)
+## Run CauFinder (one seed example)
 
 
 ```python
@@ -162,7 +160,7 @@ drivers = driver_info.index.to_list()
     
 
 
-## loading exist model and driver information(output of CausalFinder)
+## Loading exist model and driver information (output of CausalFinder)
 
 
 ```python
@@ -194,7 +192,7 @@ model.plot_pca_with_probs(adata_filter, save_dir=output_path, elev=20, azim=60)
     
 
 
-## run state transition
+## Run state transition
 
 
 ```python
@@ -258,7 +256,7 @@ adata_decrease = model.guided_state_transition(
     Processing sample 19, Target direction: decrease
 
 
-## drawing state transition score on PCA
+## Drawing state transition score on PCA
 
 ### PCA plot for data
 
@@ -391,7 +389,7 @@ plt.savefig(os.path.join(output_path, 'mouse_decrease_name_norm_score.pdf'), bbo
     
 
 
-## draw 3D state transition plot for sample
+## Draw 3D state transition plot for samples
 
 
 ```python
